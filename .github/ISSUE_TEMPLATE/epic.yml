@@ -1,0 +1,92 @@
+name: Epic
+description: High-level implementation objective within one phase milestone
+title: "[Epic][P1] "
+labels:
+  - "kind:epic"
+  - "phase:P1"
+body:
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Phase
+      description: Select exactly one phase.
+      options:
+        - "P1 Data Model and Format"
+        - "P2 Editor Core"
+        - "P3 Terrain Authoring"
+        - "P4 Multimodal and Validation"
+        - "P5 UX and Query API"
+        - "P6 Quality Demo Release"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Primary area
+      options:
+        - "area:data-model"
+        - "area:serialization"
+        - "area:editor"
+        - "area:terrain"
+        - "area:validation"
+        - "area:rendering"
+        - "area:api"
+        - "area:testing"
+        - "area:docs"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: What is missing and why this epic exists.
+      placeholder: Describe the problem this epic solves.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope boundaries
+      description: Explicitly list what is in and out.
+      placeholder: |
+        In scope:
+        - ...
+
+        Out of scope:
+        - ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Objective criteria required to close this epic.
+      placeholder: |
+        - [ ] AC1 ...
+        - [ ] AC2 ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: checklist_mapping
+    attributes:
+      label: README checklist mapping
+      description: Link exact Version 0.1 checklist items in README.
+      placeholder: "Example: README section A.1, A.3, A.6"
+    validations:
+      required: true
+
+  - type: textarea
+    id: decomposition
+    attributes:
+      label: Planned child tasks
+      description: Child tasks that will be created as sub-issues.
+      placeholder: |
+        - [ ] Task 1
+        - [ ] Task 2
+    validations:
+      required: true

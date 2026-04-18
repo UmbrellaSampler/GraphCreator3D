@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Planning discussion
+    url: https://github.com/UmbrellaSampler/GraphCreator3D/discussions
+    about: Use discussions for open-ended design conversation before creating implementation issues.

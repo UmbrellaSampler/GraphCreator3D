@@ -1,0 +1,41 @@
+name: Sub-task
+description: Small tracked unit under a task
+title: "[Sub-task][P1] "
+labels:
+  - "kind:subtask"
+  - "phase:P1"
+body:
+  - type: input
+    id: parent_task
+    attributes:
+      label: Parent task issue
+      description: Provide task reference like #34.
+      placeholder: "#<task-issue-number>"
+    validations:
+      required: true
+
+  - type: textarea
+    id: deliverable
+    attributes:
+      label: Deliverable
+      description: Specific output expected from this sub-task.
+      placeholder: "Describe exactly what done looks like."
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: |
+        - [ ] AC1 ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies or blockers
+      description: Optional references to related issues.
+    validations:
+      required: false
