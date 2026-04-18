@@ -126,3 +126,7 @@ Release rule: Version 0.1 is complete only if every item below is checked.
 - [ ] All checklist items A-I are complete.
 - [ ] Open issues are triaged; all remaining issues are non-blocking and documented.
 - [ ] A Version 0.1 release tag is created with release notes and schema version.
+
+## Project Management
+
+For GitHub issue and milestone setup, see [PROJECT_MANAGEMENT.md](PROJECT_MANAGEMENT.md).
