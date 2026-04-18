@@ -60,6 +60,16 @@ Type labels
 - `kind:bug`
 - `kind:decision`
 
+Change labels (cross-cutting dimension for issues and PRs)
+- `change:feat`
+- `change:fix`
+- `change:chore`
+- `change:docs`
+- `change:refactor`
+- `change:test`
+
+> Change labels are orthogonal to hierarchy labels. A Task can also be labeled as `change:chore`.
+
 > Phase is not tracked via labels. It is a Project field on the board.
 
 Area labels
@@ -154,6 +164,7 @@ gh issue edit 11 --body-file /tmp/issue.md
 	- `docs/` for documentation-only changes
 	- `refactor/` for structural code changes without behavior changes
 	- `test/` for test-only work
+- For each branch prefix above, use the matching `change:*` label on issues and PRs.
 - Include issue reference or short scope after the prefix.
 	- Example: `feat/11-schema-v0-identity-rules`
 
