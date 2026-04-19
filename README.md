@@ -72,7 +72,7 @@ A network can include multiple transport modalities such as walking, roads, rail
   - Tool registration: provide mode-specific editor interactions.
   - Validation hooks: contribute additional domain checks.
   - Rendering adapters: map core entities to extension-specific visuals.
-- Extensions must read and write the same core `Graph` model.
+- Extensions must read and write the same core `TransportGraph` model.
 - Extensions may add optional metadata blocks, but must not invalidate core asset loading.
 
 ### Non-Goals for Initial Release
@@ -163,7 +163,7 @@ Rule: A slice is done only when it is editable, serializable, reloadable, and va
 - [ ] README documents known limitations for Version 0.1.
 
 ### I. Test and Demo Gates
-- [ ] At least one automated round-trip test verifies save -> load -> save equivalence rules.
+- [x] At least one automated round-trip test verifies save -> load -> save equivalence rules.
 - [ ] At least one automated validator test per rule family (topology, layers, connectors, geometry).
 - [ ] At least one integration demo scene shows a multimodal network with at least 3 layers and 2 connectors.
 - [ ] Manual test script exists and is reproducible by a second developer.
