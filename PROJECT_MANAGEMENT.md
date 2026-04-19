@@ -65,7 +65,7 @@ Change labels (cross-cutting dimension for issues and PRs)
 - `change:fix`
 - `change:chore`
 - `change:docs`
-- `change:refactor`
+- `change:refac`
 - `change:test`
 
 > Change labels are orthogonal to hierarchy labels. A Task can also be labeled as `change:chore`.
@@ -162,7 +162,7 @@ gh issue edit 11 --body-file /tmp/issue.md
 	- `fix/` for bug fixes
 	- `chore/` for maintenance, tooling, and process updates
 	- `docs/` for documentation-only changes
-	- `refactor/` for structural code changes without behavior changes
+	- `refac/` for structural code changes without behavior changes
 	- `test/` for test-only work
 - For each branch prefix above, use the matching `change:*` label on issues and PRs.
 - Include issue reference or short scope after the prefix.
